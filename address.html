@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ShopNext</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <h1>
+          <a href="address.html"> Shop<span>Next</span></a>
+        </h1>
+        <button class="return">Back To Cart</button>
+      </div>
+      <div class="container">
+        <section>
+          <h2>Delivery Address</h2>
+          <form action="">
+            <div>
+              <label for="name">Full Name*</label> <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="fullname"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email*</label> <br />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="telephone">Phone Number*</label> <br />
+              <input type="tel" placeholder="" id="telephone" required />
+            </div>
+
+            <div>
+              <label for="city">City*</label> <br />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="city"
+                required
+              />
+            </div>
+            <div>
+              <label for="state">State*</label> <br />
+              <input
+                type="text"
+                name=""
+                id="state"
+                placeholder="state"
+                required
+              />
+            </div>
+            <div>
+              <label for="country">Country*</label><br />
+              <select name="" id="country" required>
+                <option value="">Select Country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="">Us</option>
+                <option value="China">China</option>
+              </select>
+            </div>
+            <div class="pay-div">
+              <button class="payment">Proceed To Payment</button>
+            </div>
+          </form>
+        </section>
+        <aside></aside>
+      </div>
+    </div>
+  </body>
+  <script src="address.js"></script>
+</html>

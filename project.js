@@ -74,10 +74,6 @@ function showloader() {
 }
 function hideloader() {
   loader.classList.add('hidden');
-  if (!isCartOpen) {
-    categoryModal.style.display = 'none';
-    overlay.style.display = 'none';
-  }
 }
 
 // fetching  products api
@@ -447,16 +443,18 @@ function handlePlaceOrder() {
   const cart = getCart();
   if (Object.keys(cart).length === 0) return;
 
-  localStorage.removeItem('cart');
+  window.location.href = 'address.html';
 
-  renderCartModal();
-  refreshProducts();
-  updateCartCount();
+  // localStorage.removeItem('cart');
+
+  // renderCartModal();
+  // refreshProducts();
+  // updateCartCount();
 
   cartModal.classList.add('hidden');
-  overlay.style.display = 'block';
-  successModal.classList.remove('hidden');
-  successModalContent.classList.remove('hidden');
+  // overlay.style.display = 'block';
+  // successModal.classList.remove('hidden');
+  // successModalContent.classList.remove('hidden');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
